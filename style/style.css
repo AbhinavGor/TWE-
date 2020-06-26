@@ -16,7 +16,7 @@ body{
 .edition_no{
     color:white;
     opacity:50%;
-    font-size: 15em;
+    font-size: 17em;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -33,16 +33,17 @@ body{
 .heroh{
     color:white;
     padding-left: 0.25em;
-    font-size: 6.2em;
+    font-size: 6em;
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
+    line-height: 100px;
     
 }
 
 .pink{
     
     width:3em;
-    height:26em;
+    height:20em;
     background-color:#FC2559;
     
 }
@@ -92,6 +93,37 @@ body{
     border-radius: 25px;
 }
 
+.hov-title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hov-desc{
+    padding:20px;
+    font-family: 'Ubuntu', sans-serif;
+    border:0.5px solid black;
+    border-radius: 25px;
+    height:90%;
+    box-shadow: 10px 2px rgba(255,255,255,0.4);
+  
+}
+
+.hov-desc h3{
+    text-align: center;
+}
+
+.hov-desc:hover{
+    transform: scale(1.03);
+}
+
+.hov-video{
+    display:flex;
+    justify-content: center;
+    margin-left:auto;
+}
 /* Extra CSS AbhinavGor added */
 
 .article-section{
@@ -115,13 +147,20 @@ body{
     padding: 20px;
     margin-top: 10%;
     margin-bottom: 10%;
+    
     border-radius: 20px;
+}
+
+.tab:hover{
+    transform: scale(1.1);
+    box-shadow:2px 2px rgba(255,255,255);
 }
 
 .tab img{
     width: 20%;
-    height: 20%;
+    height: 50%;
     border-radius: 10px;
+    margin-right: 10px;
 }
 
 .tab h4{
@@ -150,6 +189,8 @@ body{
 
 
 
+
+
 @media screen and (max-width:550px){
     .heroh{
         font-size:4em;
@@ -166,7 +207,18 @@ body{
         background-color:#FC2559;
         
     }
+
+    .hov-video{
+        width:450px;
+        height:300px;
+    }
+
+    .hov-desc{
+        margin-top:20px;
+    }
 }
+
+
 
 @media screen and (max-width: 768px){
     body{
